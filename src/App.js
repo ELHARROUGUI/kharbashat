@@ -5,6 +5,8 @@ import Panel from "./components/Panel";
 import Flame from "./components/Flame";
 import Coding from "./components/Coding";
 import Space from "./components/Space";
+import Glitch from "./components/Glitch";
+import Avatars from "./components/Avatars";
 
 const avatar1 =
   "https://media-exp1.licdn.com/dms/image/C4D03AQE2ac0dbwj6uA/profile-displayphoto-shrink_800_800/0/1602703300303?e=1634774400&v=beta&t=Mkv5pcM8HDf2ZLBQVC-k8U7hPR0mc8YpEFrc5-ZNUBo";
@@ -14,27 +16,19 @@ const avatar2 =
 export default function App() {
   return (
     <div className="App">
-      <header className="header">Header</header>
+      {/*<header className="header">Header</header>*/}
       <article className="main">
-        <img
-          style={{
-            borderRadius: "50%",
-            minHeight: "10px",
-            maxHeight: "100px",
-            paddingTop: "10px"
-          }}
-          src={avatar1}
-          alt="Me"
-        />
-        <Name />
-        <Space />
-        <Coding />
-        <Flame />
         <Panel />
+        <Avatars />
+        <Name />
+        <Glitch />
+        <Coding />
+        <Space />
+        <Flame />
       </article>
-      <aside className="aside aside-1">Aside 1</aside>
+      {/*<aside className="aside aside-1">Aside 1</aside>
       <aside className="aside aside-2">Aside 2</aside>
-      <footer className="footer">Footer</footer>
+        <footer className="footer">Footer</footer>*/}
     </div>
   );
 }
