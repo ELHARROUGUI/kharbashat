@@ -17,15 +17,15 @@ export default function App() {
   return (
     <div className="App">
       {/*<header className="header">Header</header>*/}
-      <article className="main">
-        <Panel />
-        <Avatars />
-        <Name />
-        <Glitch />
-        <Coding />
-        <Space />
-        <Flame />
-      </article>
+
+      <Panel />
+      <Avatars />
+      <Name />
+      <Glitch />
+      <Coding />
+      <Space />
+      <Flame />
+
       {/*<aside className="aside aside-1">Aside 1</aside>
       <aside className="aside aside-2">Aside 2</aside>
         <footer className="footer">Footer</footer>*/}
