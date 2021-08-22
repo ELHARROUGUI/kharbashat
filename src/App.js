@@ -1,6 +1,10 @@
 import "./styles.css";
 import Name from "./components/Name";
 import Title from "./components/Title";
+import Panel from "./components/Panel";
+import Flame from "./components/Flame";
+import Coding from "./components/Coding";
+import Space from "./components/Space";
 
 const avatar1 =
   "https://media-exp1.licdn.com/dms/image/C4D03AQE2ac0dbwj6uA/profile-displayphoto-shrink_800_800/0/1602703300303?e=1634774400&v=beta&t=Mkv5pcM8HDf2ZLBQVC-k8U7hPR0mc8YpEFrc5-ZNUBo";
@@ -12,24 +16,21 @@ export default function App() {
     <div className="App">
       <header className="header">Header</header>
       <article className="main">
-        <Name />
-        <Title />
         <img
           style={{
             borderRadius: "50%",
             minHeight: "10px",
-            maxHeight: "100px"
+            maxHeight: "100px",
+            paddingTop: "10px"
           }}
           src={avatar1}
           alt="Me"
         />
-        <p>
-          Pellentesque habitant morbi tristique senectus et netus et malesuada
-          fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-          ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-          egestas semper. Aenean ultricies mi vitae est. Mauris placerat
-          eleifend leo.
-        </p>
+        <Name />
+        <Space />
+        <Coding />
+        <Flame />
+        <Panel />
       </article>
       <aside className="aside aside-1">Aside 1</aside>
       <aside className="aside aside-2">Aside 2</aside>
